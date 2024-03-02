@@ -40,10 +40,3 @@ To run the visualizer, simply open the `index.html` file in your web browser.
 
 This visualizer was inspired by various pathfinding visualization projects and tutorials available online.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify and expand upon this README to include more details about your specific implementation and any additional features you've added.
