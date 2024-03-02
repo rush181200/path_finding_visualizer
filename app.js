@@ -148,7 +148,7 @@ function boardInteraction(cells) {
         }
 
         const pointermove = (e) => {
-            if (isDrawing) {
+            if (isDrawing && !e.target.classList.contains('source') && !e.target.classList.contains('target')) {
                 e.target.classList.add('wall');
             }
             else if (DragPoint && isDragging) {
@@ -325,12 +325,13 @@ visualizeBtn.addEventListener('click', () => {
     clearPath();
     visitedCell = [];
     pathToAnimate = [];
-
+    console.log(algorithm);
     switch (algorithm) {
+       
         case 'BFS':
             BFS();
             break;
-        case 'Dijkstar\'s':
+        case 'Dijkstra\'s':
             Dijsktra();
             break;
         case 'greedy':
